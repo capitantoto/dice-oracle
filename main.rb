@@ -14,3 +14,12 @@
 
 require_relative 'players'
 require_relative 'environment'
+## 0 ##
+rules = Rules.new(1, 200, true)
+world = PossibleScenarios.new(rules)
+
+## 1 ##
+nature = Thrower.new(world.hypotheses.shuffle.first)
+oracle = Guesser.new(world.hypotheses)
+## 2 ##
+nature.throw

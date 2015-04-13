@@ -1,6 +1,6 @@
 class Dice
 
-#  attr_reader :sides
+  attr_reader :sides
 
   def initialize(sides)
     @sides = sides
